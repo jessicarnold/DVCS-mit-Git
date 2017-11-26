@@ -41,9 +41,9 @@ public class Streichholzspiel {
 		} while (newNumberOfMatchsticks > 0);
 
 		if (computerWins) {
-			System.out.println("Der Computer hat gewonnen.");
+			System.out.println("Schade du hast leider verloren.");
 		} else {
-			System.out.println("Gl�ckwunsch - Du hast gewonnen!");
+			System.out.println("Du hast gewonnen!");
 		}
 	}
 
