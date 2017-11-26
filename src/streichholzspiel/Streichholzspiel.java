@@ -6,10 +6,10 @@ public class Streichholzspiel {
 
 	private void gameProcess() {
 		boolean computerStarts;
-		System.out.println("Mit wie vielen Streichhölzern soll gespielt werden?");
+		System.out.println("Wie viele StreichhÃ¶lzer sollen im Spiel sein");
 		int numberOfMatchsticks = scanner.nextInt();
 
-		System.out.println("Wer soll beginnen?");
+		System.out.println("Wer zieht als erstes?");
 		System.out.println("Computer (c)");
 		System.out.println("ich (i)");
 		String startChoice = scanner.next();
@@ -28,7 +28,7 @@ public class Streichholzspiel {
 		boolean computerPicks = computerStarts;
 
 		do {
-			System.out.println("Es sind noch " + newNumberOfMatchsticks + " Hölzer im Spiel.");
+			System.out.println("Es sind noch " + newNumberOfMatchsticks + " Hï¿½lzer im Spiel.");
 			if (computerPicks) {
 				newNumberOfMatchsticks = computerPicks(newNumberOfMatchsticks);
 				if (newNumberOfMatchsticks == 0) {
@@ -43,14 +43,14 @@ public class Streichholzspiel {
 		if (computerWins) {
 			System.out.println("Der Computer hat gewonnen.");
 		} else {
-			System.out.println("Glückwunsch - Du hast gewonnen!");
+			System.out.println("Glï¿½ckwunsch - Du hast gewonnen!");
 		}
 	}
 
 	int gamerPicks() {
 		int numberGamerPicks = 0;
 		while (numberGamerPicks < 1 || numberGamerPicks > 3) {
-			System.out.println("Wie viele Streichhölzer willst du nehmen? Wähle 1, 2, oder 3.");
+			System.out.println("Wie viele Streichhï¿½lzer willst du nehmen? Wï¿½hle 1, 2, oder 3.");
 			numberGamerPicks = scanner.nextInt();
 		}
 		return numberGamerPicks;
@@ -62,7 +62,7 @@ public class Streichholzspiel {
 		if (numberComputerPicks == 0) {
 			numberComputerPicks = 1;
 		}
-		System.out.println("Der Computer hat " + numberComputerPicks + " Streichhölzer genommen.");
+		System.out.println("Der Computer hat " + numberComputerPicks + " Streichhï¿½lzer genommen.");
 		return numberOfMatchsticks - numberComputerPicks;
 	}
 
