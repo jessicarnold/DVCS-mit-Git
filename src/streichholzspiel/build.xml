@@ -2,7 +2,7 @@
 
 <project name = "Streichholzspiel" basedir="." default = "run">
    <target name = "run" depends = "clean">
-      <echo>Hallo Welt! Test Streichholzspiel</echo>
+      <echo>Hallo Welt!</echo>
    </target>
 		
 	<target name = "init" depends = "compile">
